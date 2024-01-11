@@ -29,5 +29,5 @@ docker run -d -p 8003:8003 --name pyblog \
 -e MYSQL_DATABASE=cicd \
 -e MYSQL_USER=root \
 -e MYSQL_PASSWORD=123456 \
-kevin163/pyblog:v1.1
+kevin163/pyblog:vbeta
 ```
