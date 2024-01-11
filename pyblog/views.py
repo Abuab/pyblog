@@ -10,7 +10,7 @@ def init_blue(app):
 def index():
     return '深深太平洋底深深伤心'
 
-@blue.route('/nihao/')
+@blue.route('/wtf/')
 def index():
     return 'WTF!'
 
