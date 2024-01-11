@@ -11,7 +11,7 @@ def index():
     return '深深太平洋底深深伤心'
 
 @blue.route('/wtfkevin/')
-def index():
+def wtfkevin():
     return 'WTF kevin!'
 
 @blue.route('/hello/')
