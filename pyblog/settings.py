@@ -25,11 +25,11 @@ class DevelopConfig(Config):
     dbinfo = {
         "ENGINE": "mysql",
         "DRIVER": "pymysql",
-        "USER": "root",
-        "PASSWORD": "123456",
-        "HOST": "192.168.19.12",
-        "PORT": "30006",
-        "NAME": "cicd",
+        "USER": os.environ.get("MYSQL_USER"),
+        "PASSWORD": os.environ.get("MYSQL_PASSWORD"),
+        "HOST": os.environ.get("MYSQL_HOST"),
+        "PORT": os.environ.get("MYSQL_PORT"),
+        "NAME": os.environ.get("MYSQL_DATABASE"),
     }
     SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
 
@@ -39,11 +39,11 @@ class TestConfig(Config):
     dbinfo = {
         "ENGINE": "mysql",
         "DRIVER": "pymysql",
-        "USER": "root",
-        "PASSWORD": "123456",
-        "HOST": "192.168.19.12",
-        "PORT": "30006",
-        "NAME": "cicd",
+        "USER": os.environ.get("MYSQL_USER"),
+        "PASSWORD": os.environ.get("MYSQL_PASSWORD"),
+        "HOST": os.environ.get("MYSQL_HOST"),
+        "PORT": os.environ.get("MYSQL_PORT"),
+        "NAME": os.environ.get("MYSQL_DATABASE"),
     }
     SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
 
@@ -52,11 +52,11 @@ class StagingConfig(Config):
     dbinfo = {
         "ENGINE": "mysql",
         "DRIVER": "pymysql",
-        "USER": "root",
-        "PASSWORD": "123456",
-        "HOST": "192.168.19.12",
-        "PORT": "30006",
-        "NAME": "cicd",
+        "USER": os.environ.get("MYSQL_USER"),
+        "PASSWORD": os.environ.get("MYSQL_PASSWORD"),
+        "HOST": os.environ.get("MYSQL_HOST"),
+        "PORT": os.environ.get("MYSQL_PORT"),
+        "NAME": os.environ.get("MYSQL_DATABASE"),
     }
     SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
 
@@ -65,11 +65,11 @@ class ProductConfig(Config):
     dbinfo = {
         "ENGINE": "mysql",
         "DRIVER": "pymysql",
-        "USER": "root",
-        "PASSWORD": "123456",
-        "HOST": "192.168.19.12",
-        "PORT": "30006",
-        "NAME": "cicd",
+        "USER": os.environ.get("MYSQL_USER"),
+        "PASSWORD": os.environ.get("MYSQL_PASSWORD"),
+        "HOST": os.environ.get("MYSQL_HOST"),
+        "PORT": os.environ.get("MYSQL_PORT"),
+        "NAME": os.environ.get("MYSQL_DATABASE"),
     }
     SQLALCHEMY_DATABASE_URI = get_db_uri(dbinfo)
 
