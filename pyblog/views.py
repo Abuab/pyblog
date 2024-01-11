@@ -10,6 +10,10 @@ def init_blue(app):
 def index():
     return '深深太平洋底深深伤心'
 
+@blue.route('/nihao/')
+def index():
+    return 'WTF!'
+
 @blue.route('/hello/')
 def hello():
     return render_template('index.html')
