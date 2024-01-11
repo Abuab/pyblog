@@ -19,6 +19,9 @@ python3 manage.py runserver -p 8003 -h 0.0.0.0 -d -r --threaded
 
 ### docker环境配置
 ```
+# docker build image
+docker build -t kevin163/pyblog:vbeta .
+# docker create container
 docker run -d -p 8003:8003 --name pyblog \
 -e FLASK_ENV=develop \
 -e MYSQL_HOST=192.168.19.12 \
